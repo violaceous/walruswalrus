@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Asap' rel='stylesheet' type='text/css'>    <meta charset="utf-8">
+    <title>WalrusWalr.us</title>
+    <link rel="stylesheet" href="/static/css/app.css" />
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class = "row">
+
+			<h1><a href="{{ url_for('index') }}">WalrusWalr.us</a><img id="walrus_image" src = "/static/img/walrus.jpg"/></h1>
+
+    </div>
+	<div class = "row">
+		<div class = "12-large columns">
+		<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">My Site</a></h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><a href="/.">Home</a></li>
+      <li><a href="/posts">Posts</a></li>
+	  <li><a href="https://github.com/violaceous">Github</a></li>
+	  <li><a href="/contact">Contact</a></li>
+    </ul>
+
+  </section>
+</nav>
+		</div>
+	</div>
+	<div class = "row">
+		{% block content %}
+			<p>Default content to be displayed</p>
+		{% endblock content %}
+	</div>
+</body>
+</html>

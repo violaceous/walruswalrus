@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>Most Recent Posts</h3>
+    {% with pages=pages  %}
+        {% include "_long-list.html" %}
+    {% endwith %}
+{% endblock content %}
