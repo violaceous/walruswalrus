@@ -1,0 +1,86 @@
+$brown: #8D6B50;
+$brown_muted: #6A5747;
+$brown_dark: #5C371A;
+$brown_light: #C6A286;
+$brown_lightest: #C6AC97;
+$blue: #3A455E;
+$blue_muted: #323947;
+$blue_dark: #13203D;
+$blue_light: #768CAF;
+$blue_lightest: #8995AF;
+$green: #437241;
+$green_muted: #3B563A;
+$green_dark: #184A15;
+$green_light: #80B97D;
+$green_lightest: #8FB98D;
+
+body, html{
+	font-family: 'Asap', sans-serif;
+	font-size: 100%;
+	word-spacing: .25em;
+	line-height: 1.6em;
+}
+
+#main_text{
+
+}
+
+#right_gutter {
+
+}
+
+#left_gutter {
+
+}
+
+#nav {
+	#list-style-type: none;
+	#margin: 0 0 0 0;
+}
+
+#nav li {
+	background: $green_lightest;
+	text-decoration: none;
+	float: left;
+	padding: .3rem .6rem .3rem .6rem;
+}
+
+$topbar-bg: $green_lightest;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Reenie Beanie', cursive;
+}
+
+h1 { 
+	font-size: 7rem;
+}
+
+h2 { 
+	font-size: 4.75rem;
+}
+
+h3 { 
+	font-size: 4rem;
+}
+
+h4 { 
+	font-size: 3.25rem;
+}
+
+h5 { 
+	font-size: 2.5rem;
+}
+
+h6 { 
+	font-size: 1.75rem;
+}
+
+#walrus_image{
+	max-height: 6rem;
+	margin-left: 2rem;
+}
