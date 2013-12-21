@@ -1,3 +1,4 @@
+published: true
 title: Why Bother With a Blog?
 date: 12-07-2013
 tags: [blog]

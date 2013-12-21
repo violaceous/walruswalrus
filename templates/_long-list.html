@@ -1,5 +1,5 @@
 <ul>
-{% for page in pages %}
+{% for page in pages if page.published == true %}
     <li>
         <a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a>
         <p>  

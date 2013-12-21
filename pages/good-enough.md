@@ -1,3 +1,4 @@
+published: true
 title: Good Enough
 date: 12-07-2013
 tags: [blog, product management]
