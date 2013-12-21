@@ -1,7 +1,9 @@
 published: false
 title: First Post
 date: 12-07-2013
-tags: [python, flask, blog]
+tags: [python, flask, blog, S3]
+
+
 
 There have been a lot of posts on Hacker News lately about people creating static websites. I've meant to quickly throw together a blog for a while now but it seemed to require me embracing something I was completely uninterested in learning (Wordpress, Drupal, etc) or spending more effort than I really wanted to in order to roll my own. But seeing how some people tackled the idea of a static blog prompted me to think of Flask. Flask is currently my prefered backend of choice for how quick and easy it is to work with. I usually use it to serve JSON to power a javascript frontend but I had mucked around with the Jinja2 templates before and knew they were easy to use.
 
