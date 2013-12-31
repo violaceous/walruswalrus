@@ -1,11 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-	<div id="right_gutter" class="small-1 large-2 columns">&nbsp;</div>
+	<div id="right_gutter" class="small-1 large-2 columns">&nbsp;
+</div>
 	<div id="main_text" class="small-10 large-8 columns">
 		<h2>{{ page.title }}</h2>
 		{{ page.html|safe }}
 	</div>  
-	<div id="left_gutter" class="small-1 large-2 columns">&nbsp;</div>
+	<div id="left_gutter" class="small-1 large-2 columns">&nbsp;
+    {% with pages=pages, tags=tags %}
+        {% include "_tags.html" %}
+    {% endwith %}
+</div>
 {% endblock content %}
 

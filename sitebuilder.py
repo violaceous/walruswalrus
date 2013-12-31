@@ -28,7 +28,13 @@ def contact():
 @app.route('/<path:path>/')
 def page(path):
     page = pages.get_or_404(path)
-    return render_template('page.html', page=page)
+    tags = page.meta.get('tags', [])
+    taggedPages = []
+    for tag in tags:
+        toExtend = [p for p in pages if tag in p.meta.get('tags', [])]
+        taggedPages.extend(toExtend)
+    taggedPages = list(set(taggedPages))
+    return render_template('page.html', page=page, pages=pages, tags=tags, taggedPages=taggedPages)
     
 @app.route('/tag/<string:tag>/')
 def tag(tag):
